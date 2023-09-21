@@ -1,0 +1,118 @@
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 2rem;
+	text-align: center;
+}
+.comments {
+	padding: 2rem;
+	background: #7d7d7d;
+	min-height: 10rem;
+	border-radius: 0.625rem;
+}
+
+.new-comment {
+	display: flex;
+}
+
+.comment-color {
+	width: 2.5rem;
+	height: 2.5rem;
+}
+.app-wrap {
+	display: flex;
+	flex-direction: column;
+}
+.todo-wrap {
+	margin-bottom: 1.25rem;
+}
+.todo-title {
+	font-weight: 600;
+	font-size: xx-large;
+	margin-bottom: 1.25rem;
+}
+.todo-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: cadetblue;
+	border-radius: 0.5rem;
+	margin-top: 1.25rem;
+	padding-left: 0.6rem;
+	height: 2.5rem;
+	cursor: pointer;
+}
+.todo-item:hover {
+	transition: all 0.3s linear;
+	background-color: rgb(67, 112, 114);
+}
+.input {
+	height: 1.875rem;
+	width: 13.75rem;
+	padding-left: 0.625rem;
+}
+
+.btn {
+	margin-left: 0.938rem;
+	height: 2.25rem;
+	cursor: pointer;
+	border: none;
+	border-radius: 0.5rem;
+	width: 9.25rem;
+}
+.color {
+	width: 2.5rem;
+	height: 2.5rem;
+	margin-right: 0.625rem;
+}
+.text-area {
+	margin-right: 0.625rem;
+}
+
+.comment {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: cadetblue;
+	margin-bottom: 0.625rem;
+	margin-top: 0.625rem;
+	border-radius: 0.5rem;
+	padding-right: 0.313rem;
+}
+.btn-comments {
+	cursor: pointer;
+	border: none;
+	border-radius: 0.5rem;
+}
+.btn-comments:hover {
+	background-color: cadetblue;
+	transition: all 0.3s linear;
+}
+.btn:hover {
+	background-color: cadetblue;
+	transition: all 0.3s linear;
+}
+.new-comment {
+	margin-top: 1.5rem;
+}
+.score {
+	background-color: rgb(166 101 226);
+	width: 0.938rem;
+	border-radius: 0.25rem;
+	margin-right: 0.4rem;
+}
+.remove {
+	border: none;
+	cursor: pointer;
+	height: 1.5rem;
+	border-radius: 0.313rem;
+	margin-right: 0.625rem;
+}
+.remove:hover {
+	background-color: rgb(120, 53, 53);
+	transition: all 0.3s linear;
+}
+.todo-name {
+	flex-grow: 90;
+	display: flex;
+}
