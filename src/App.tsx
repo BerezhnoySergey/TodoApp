@@ -9,9 +9,8 @@ function App() {
 	const [items, setItems] = useState<ITodoItem[]>(
 		JSON.parse(localStorage.getItem("items") ?? "[]")
 	);
-	const [inputValue, setInputValue] = useState<string>(
-		localStorage.getItem("inputValue") ?? ""
-	);
+	const [inputValue, setInputValue] = useState<string>("");
+
 	const [selectedItem, setSelectedItem] = useState<ITodoItem | null>(
 		JSON.parse(localStorage.getItem("selectedItem") ?? "null")
 	);
@@ -19,10 +18,6 @@ function App() {
 	useEffect(() => {
 		localStorage.setItem("items", JSON.stringify(items));
 	}, [items]);
-
-	useEffect(() => {
-		localStorage.setItem("inputValue", inputValue);
-	}, [inputValue]);
 
 	useEffect(() => {
 		localStorage.setItem("selectedItem", JSON.stringify(selectedItem));
